@@ -14,30 +14,13 @@
                 <a class="navbar-brand" href="#"> Blog d'Écrivain</a>
               </div>
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Page 1</a></li>
+                <li class="active"><a href="#">MENU</a></li>
+                <li><a href="#">page</a></li>
                 <li><a href="#">Page 2</a></li>
                 <li><a href="#">Page 3</a></li>
               </ul>
             </div>
           </nav>
-
-		        <div id="navbar" class="navbar-collapse collapse">
-
-		        	
-			          	<form class="navbar-form navbar-right" method="POST" >
-			          					            	<div class="form-group">
-			             	 	<input name="login" type="text" id="login" placeholder="Identifiant" class="form-control">
-			            	</div>
-			            	<div class="form-group">
-			              		<input type="password" name="pass" id="pass" placeholder="Mot de passe" class="form-control">
-			            	</div>
-			            	<button type="submit" class="btn btn-success">Connexion</button>
-			          	</form>
-
-			        		        </div>
-      		</div>
-   		</nav>
 
         
 <div class="jumbotron">
