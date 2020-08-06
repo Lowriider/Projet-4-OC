@@ -20,11 +20,6 @@ function register() {
             $_SESSION['message'] = " les champs n'existent pas !";
             $_SESSION['msg_type'] = "danger";
         }
-        if(strlen($_POST['password']) <= 8 && strlen($_POST['nickname']) <= 3){
-            $validation = false;
-            $_SESSION['message'] = " Le pseudo doit être supérieur ou égal à 3 caratères et le mot de passe doit être supérieur ou égal à 8 caratères !";
-            $_SESSION['msg_type'] = "danger";
-        }
         if(strlen($_POST['password']) <= 8){
             $validation = false;
             $_SESSION['message'] = " Le mot de passe doit être supérieur ou égal à 8 caratères !";
