@@ -1,0 +1,101 @@
+.commentaires {
+	
+	margin: 100px;
+}
+.article {
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+body {
+	text-align: center;
+	justify-content: center;
+	background-image: url('../../public/image/books.jpg');
+}
+table {
+	border: 1px solid black;
+}
+tr {
+	border: 1px solid black;
+}
+td {
+	border: 1px solid black;
+}
+.adminTable {
+	border: 1px solid black;
+}
+.login {
+	justify-content: center;
+}
+.tox.tox-tinymce {
+	margin: auto;
+}
+
+.editTitle.w-25 {
+	margin: auto;
+}
+.editAutor.w-25 {
+	margin: auto;
+}
+.pseudoInput.w-25 {
+	margin: auto;
+}
+.form-signin.w-25 {
+	margin: auto;
+}
+div#articles {
+	background-color: rgba(201, 211, 199, 0.5);
+	padding-bottom: 5px;
+}
+div.jumbotron {
+	background-color: rgba(255, 255, 255, 0.7);
+	margin-top: 150px;
+}
+.navbar {
+	width: 100%;
+	background-color: rgb(205, 206, 205);
+	margin-bottom:50px;
+}
+#footer {
+	
+	background-color: rgb(205, 206, 205);
+	height: 85px;
+	position: relative;
+	bottom: 0px;
+}
+#footer p {
+	padding-top: 20px;
+	
+}
+
+.article, .commentaires {
+	background-color: rgba(201, 211, 199, 0.5);
+}
+
+input.form-control {
+	background-color: rgba(201, 211, 199, 0.5);
+}
+textarea {
+	background-color: rgba(201, 211, 199, 0.5);
+}
+a,h1 {
+	color: rgb(110, 117, 108, 1);
+	text-shadow: 1px 1px 1px black;
+}
+a:hover {
+	color: rgb(110, 117, 108, 1);
+}
+#editor {
+	margin-bottom: 80px;
+}
+label[for=pseudo], legend {
+	text-shadow: 1px 1px 1px black;
+	color: rgb(110, 117, 108, 1);
+}
+
+@media (max-width:576px) {
+	#footer {
+		height: 130px;
+	}
+	
+}
