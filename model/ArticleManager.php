@@ -7,7 +7,7 @@ class ArticleManager {
     {
         try 
         {
-            $this->db = new PDO ('mysql:host=localhost; dbname=blog;charset=utf8' , 'root' , '' , array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+            $this->db = new PDO ('mysql:host=db5000834980.hosting-data.io; dbname=dbs737598', 'dbu551191', 'L@vi3e$tb3lle' , array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
         }
         catch(Exception $e)
         {
@@ -25,9 +25,18 @@ class ArticleManager {
         ]);
 
     }
-    public function getAll() {
+  	public function getFew() {
         $articles=[];
         $req = $this->db->prepare('SELECT * FROM articles ORDER BY id DESC LIMIT 0, 5');
+        $req -> execute();
+        while($article = $req->fetch(\PDO::FETCH_ASSOC)){
+            $articles[] = new Article($article);
+        }
+        return $articles;
+    }
+    public function getAll() {
+        $articles=[];
+        $req = $this->db->prepare('SELECT * FROM articles ORDER BY id DESC');
         $req -> execute();
         while($article = $req->fetch(\PDO::FETCH_ASSOC)){
             $articles[] = new Article($article);

@@ -31,7 +31,7 @@ $login = ob_get_clean(); ?>
 <?php ob_start(); ?>
 	<h1>Bonjour tout le monde !</h1>
 	<p>Bienvenue ! Je suis Jean Forteroche, écrivain. Vous êtes actuellement sur mon Blog où je poste au fur et
-	à mesure un nouveau chapitre de mon dernier roman intitulé Billet simple pour Alaska. N\'hésitez pas
+	à mesure un nouveau chapitre de mon dernier roman intitulé Billet simple pour Alaska. N'hésitez pas
 	à y laisser des commentaires !
 	</p>
 <?php $headerText = ob_get_clean(); ?>      

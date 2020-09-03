@@ -21,7 +21,7 @@ $login  = ob_get_clean(); ?>
 
 <?php ob_start(); ?>
 	<h1>Interface Admin !</h1>
-	<p>Bienvenue sur l\'interface Admin du site !</p>
+	<p>Bienvenue sur l'interface Admin du site !</p>
 <?php $headerText = ob_get_clean(); ?>
 
 <?php ob_start(); ?>

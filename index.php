@@ -18,6 +18,8 @@ try {
 			commentsView();
 		elseif($_GET['page'] == "postComment")
 		postComment();
+		elseif($_GET['page'] == "chapters")
+			readAll();
 		elseif($_GET['page'] == "delete") 
 			delete();
 		elseif($_GET['page'] == "login")
@@ -46,10 +48,8 @@ try {
 		else
 			error(); 
 	}
-	elseif(strpos($_SERVER['SCRIPT_NAME'], '/projet-4-OC/index.php') !== false)
-		home();
 	else
-		error();
+		home();
 } 
 catch (Exception $e) {
 	$errorMsg =$e->getMessage();

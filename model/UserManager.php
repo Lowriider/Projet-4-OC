@@ -6,7 +6,7 @@ class UserManager {
     {
         try 
         {
-            $this->db = new PDO ('mysql:host=localhost; dbname=blog;charset=utf8' , 'root' , '' , array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+            $this->db = new PDO ('mysql:host=db5000834980.hosting-data.io; dbname=dbs737598',  'dbu551191', 'L@vi3e$tb3lle' , array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
         }
         catch(Exception $e)
         {

@@ -13,6 +13,7 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="index.php"> Blog d'Écrivain</a>
+                        <a class="navbar-brand" href="index.php?page=chapters"> Lire la suite des chapitres?</a>
                     </div class="login">
                         <?= $login ?>
                     </div>

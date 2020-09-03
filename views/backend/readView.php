@@ -2,7 +2,7 @@
 <?php ob_start(); ?>
     <div class="disconnect">
         <p class="msgHome">Bonjour <a href="index.php?page=admin"><?=$_SESSION['nickname']?></a> et bienvenue sur vôtre blog</p>
-		<a href="index.php?page=deconnexion"class="btn btn-primary">Déconnexion</a>
+		<a href="index.php?page=disconnect"class="btn btn-primary">Déconnexion</a>
      </div>
 <?php $login  = ob_get_clean(); ?>
 

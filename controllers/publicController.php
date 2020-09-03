@@ -7,8 +7,15 @@
 function home () {
 
     $articleManager = new ArticleManager();
-    $article = $articleManager->getAll();
+    $article = $articleManager->getFew();
     include('views/frontend/indexView.php');
+}
+
+function readAll() {
+    
+    $articleManager = new ArticleManager();
+    $article = $articleManager->getAll();
+    include('views/frontend/readAll.php');
 }
 
 function register() {
@@ -69,7 +76,12 @@ function login() {
                 $_SESSION['msg_type'] = "success";
                 header('location: index.php?page=admin');
             }
-        }
+           else {
+          	  header('location: index.php');
+        	 $_SESSION['message'] = "Mauvais mot de passe ou identifiant";
+             $_SESSION['msg_type'] = "danger";
+          }
+       }  
     }
     else {
         header('location: index.php');
@@ -80,12 +92,11 @@ function login() {
 
 function disconnect() {
 
-    $_SESSION['message'] = "Vous êtes maintenant Déconnecté !";
+    $_SESSION['message'] = "Vous êtes maintenant déconnecté !";
     $_SESSION['msg_type'] = "success";
     header('location: index.php');
-    var_dump('HELLO');
-    session_destroy();
     unset($_SESSION);
+    session_destroy();
 }
 
 function commentsView() {

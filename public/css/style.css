@@ -73,7 +73,7 @@ div.jumbotron {
 }
 
 input.form-control {
-	background-color: rgba(201, 211, 199, 0.5);
+	background-color: rgba(255, 255, 255, 0.5);
 }
 textarea {
 	background-color: rgba(201, 211, 199, 0.5);
@@ -96,6 +96,12 @@ label[for=pseudo], legend {
 @media (max-width:576px) {
 	#footer {
 		height: 130px;
+      	margin-top:130px;
 	}
-	
+	#errorLogo {
+      width:300px;
+	}
+  	div.jumbotron {
+      margin-top: 10px;
+  }
 }
